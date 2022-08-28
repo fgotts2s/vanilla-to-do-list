@@ -179,11 +179,13 @@ class VanillaToDoListPreviewView {
    */
   render(toDoList) {
     let toDoListItems = toDoList.items;
-    const nodeHeadingTwo = this.nodeSectionContainer.querySelector('header h2');
-    const headingTwoClass = toDoList.done === false ? 'pending' : 'done';
-    nodeHeadingTwo.textContent = toDoList.name;
-    nodeHeadingTwo.classList.add(headingTwoClass);
-    nodeHeadingTwo.classList.remove('hidden');
+    if (toDoList.name !== undefined && toDoList.done !== undefined) {
+      const nodeHeadingTwo = this.nodeSectionContainer.querySelector('header h2');
+      const headingTwoClass = toDoList.done === false ? 'pending' : 'done';
+      nodeHeadingTwo.textContent = toDoList.name;
+      nodeHeadingTwo.classList.add(headingTwoClass);
+      nodeHeadingTwo.classList.remove('hidden');
+    }
     const nodeSectionToDoList = this.nodeSectionContainer.querySelector('section.to-do-list');
     // First, remove any existing child nodes respectively the paragraph or the to-do list.
     nodeSectionToDoList.replaceChildren();
