@@ -559,7 +559,7 @@ class VanillaToDoListsView {
           nodeListItemName.dataset.lastModified = toDoList.lastUpdated;
         }
         const nodeListItemNameLink = this.#createElement('a');
-        nodeListItemNameLink.href = `/to-do-list/${toDoList.id}`;
+        nodeListItemNameLink.href = `/vanilla-to-do-list/to-do-list/${toDoList.id}`;
         nodeListItemNameLink.textContent = toDoList.name;
         const nodeListItemCount = this.#createElement('span', 'count');
         nodeListItemCount.textContent = `(${countToDoListItemsAll} ${countToDoListItemsAll === 1 ? 'item' : 'items'}${countToDoListItemsAll > 0 ? ': ' + countToDoListItemsPending + ' pending, ' + countToDoListItemsDone + ' done' : ''})`;
