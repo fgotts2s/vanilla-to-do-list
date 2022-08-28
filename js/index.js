@@ -6,8 +6,8 @@ const nodeSinglePageApplication = document.getElementById('single-page-applicati
  * An object containing the single page application's routes.
  */
 const singlePageApplicationRoutes = {
-  '/vanilla-to-do-list/': 'vanilla-to-do-lists',
-  '/vanilla-to-do-list/to-do-list': 'vanilla-to-do-list'
+  '/': 'vanilla-to-do-lists',
+  '/to-do-list': 'vanilla-to-do-list'
 };
 /**
  * A function to handle a window load or popstate event.
