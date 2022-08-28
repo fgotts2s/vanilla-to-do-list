@@ -14,7 +14,7 @@ const singlePageApplicationRoutes = {
  */
 const eventHandler = () => {
   // Split the pathname into slug and ID.
-  const pathParts = window.location.pathname.split('/');
+  const pathParts = window.location.pathname.replace('/vanilla-to-do-list', '').split('/');
   const slug = pathParts[1];
   const id = pathParts[2];
   // Determine which web component to display.
