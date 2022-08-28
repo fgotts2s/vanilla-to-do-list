@@ -192,7 +192,7 @@ class VanillaToDoListView {
         margin: 0 0 0 0.25em;
         width: 0.5em;
         height: 0.5em;
-        background: url('/img/javascript.svg') no-repeat;
+        background: url('/vanilla-to-do-list/img/javascript.svg') no-repeat;
       }
       header h2 {
         margin: 0;
